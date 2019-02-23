@@ -1,0 +1,21 @@
+{
+  "name": "Weather in Maps",
+  "version": "1.0.0",
+  "description": "Get a link to NOAA weather for a location in Google Maps.",
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "run_at": "document_idle",
+      "js": ["bundle.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/noaa.svg"
+  ],
+  "manifest_version": 2
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useCache": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
